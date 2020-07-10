@@ -4,9 +4,8 @@ class CreateProducts < ActiveRecord::Migration[6.0]
       t.string :title
       t.text :description
       t.string :image_url
-      t.[string] :images
-      t.decimal :price
-      t.int :stock
+      t.decimal :price, precision: 8, scale: 2
+      t.integer :stock
 
       t.timestamps
     end

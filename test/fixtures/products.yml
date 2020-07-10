@@ -4,7 +4,6 @@ one:
   title: MyString
   description: MyText
   image_url: MyString
-  images: 
   price: 9.99
   stock: 
 
@@ -12,6 +11,5 @@ two:
   title: MyString
   description: MyText
   image_url: MyString
-  images: 
   price: 9.99
   stock: 

@@ -1,0 +1,151 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.navbar-custom {
+    background: black !important;
+    width: 50%;
+    font-size:  0.5 em !important;
+}
+
+.navbar-nav {
+    color: white !important;
+    font-size: 0.85em !important;
+}
+
+.black-col{
+    background-color: black;
+    text-align: center;
+    height: 100vh;
+}
+
+.white-col {
+    background-color: white;
+    color: black;
+    letter-spacing: 10px;
+    text-align: center;
+    height: 100vh;
+    
+}
+
+.header {
+    background-color: black;
+    //text-align: center;
+    margin-top: 15vh;
+    height: 70%;
+}
+
+.header-title {
+    //position: fixed;
+    font-size: 60px;
+    color: white;
+    //margin-top: 
+    letter-spacing: 10px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.header-slogan{
+    margin-top: 10%;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 10px;
+    font-weight: 100;
+    //line-height: 1.5;
+}
+
+
+.thin-line {
+    font-size: 55px;
+    font-weight: 100;
+}
+
+.highlight-word {
+    color: goldenrod;
+}
+
+@keyframes first-slide-in{
+    from{
+        margin-left: -300%;
+        color: transparent;
+    }
+
+    to {
+        margin-left: 0%;
+        color: black;
+    }
+}
+
+@keyframes second-slide-in {
+    from{
+        margin-left: -400%;
+        color: transparent;
+    }
+
+    to {
+        margin-left: 0%;
+        color: black;
+    }
+}
+
+@keyframes third-slide-in {
+    from{
+        margin-left: -500%;
+        color: transparent;
+    }
+
+    to {
+        margin-left: 0%;
+        color: black;
+    }
+}
+
+
+.first-line {
+    margin-top: 35vh;
+    font-weight: 200;
+    text-indent: -5em;
+    font-size: 30px;
+    line-height: 2.0;
+    animation-name: first-slide-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+.second-line {
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 2.0;
+    animation-name: second-slide-in;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.third-line {
+    font-weight: 200;
+    font-size: 30px;
+    text-indent: 6.1em;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 2.0;
+    animation-name: third-slide-in;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+.img {
+    height: 250px;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -125px;
+    position: absolute;
+    top: 50%;
+    width: 250px;
+    filter: drop-shadow(5px 5px 5px #1f1f1f);
+}
+
+@media only screen and (max-width : 767px) {
+    .img { display: none; }
+    .navbar-custom { width: 100% }
+     /*optional stuffs */ 
+    //.logo img {width:initial; height:initial;}
+  }
